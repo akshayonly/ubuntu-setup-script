@@ -43,6 +43,7 @@ sudo apt-get install -f tlp tlp-rdw -y
 
 # Daily
 sudo apt-get install -f neofetch -y
+sudo apt-get install -f telegram-desktop -y
 sudo apt-get install -f sublime-text -y
 sudo apt-get install -f vlc -y
 sudo apt-get install -f spotify-client -y
