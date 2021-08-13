@@ -10,6 +10,7 @@ echo "----------UPDATING THE SYSTEM----------"
 
 sudo apt-get update
 sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 echo "----------SYSTEM UPDATED----------"
 
@@ -29,11 +30,16 @@ sudo apt-get update
 # Installing applications
 
 # System
+sudo apt-get install -f ubuntu-restricted-extras -y
+sudo apt-get install -f libavcodec-extra -y
+sudo apt-get install -f libdvd-pkg -y
 sudo apt-get install -f gdebi -y
 sudo apt-get install -f apt-transport-https curl -y
 sudo apt-get install -f curl -y
+sudo apt-get install openssh-server
 
 # Utility
+sudo apt-get install unace rar unrar p7zip-rar p7zip sharutils uudeview mpack arj cabextract lzip lunzip -y
 sudo apt-get install git -y
 sudo apt-get install dh-autoreconf libcurl4-gnutls-dev libexpat1-dev make gettext libz-dev libssl-dev libghc-zlib-dev -y
 sudo apt-get install -f lm-sensors -y
