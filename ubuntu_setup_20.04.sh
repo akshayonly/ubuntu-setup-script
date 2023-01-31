@@ -12,12 +12,8 @@ echo "----------INSTALLING PACKAGES & APPS----------"
 sudo add-apt-repository ppa:papirus/papirus
 sudo add-apt-get-repository ppa:linrunner/tlp
 sudo curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-get-release.s3.brave.com/
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-get-release.s3.brave.com/ stable main" | sudo tee /etc/apt-get/sources.list.d/brave-browser-release.list
 echo "deb https://download.sublimetext.com/ apt-get/stable/" | sudo tee /etc/apt-get/sources.list.d/sublime-text.list
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 
 sudo apt-get update
 
@@ -47,7 +43,6 @@ sudo apt-get install -f telegram-desktop -y
 sudo apt-get install -f sublime-text -y
 sudo apt-get install -f vlc -y
 sudo apt-get install -f spotify-client -y
-sudo apt-get install -f brave-browser -y 
 sudo apt-get install -f qbittorrent -y
 
 
